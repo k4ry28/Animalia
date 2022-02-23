@@ -1,0 +1,151 @@
+body {    
+    background-image: radial-gradient(circle, rgb(45, 191, 248), rgb(109, 51, 202));
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    max-width: 77%;
+    margin: 0px auto;
+}
+
+.nav-bar {        
+    font-family: 'Bubblegum Sans', cursive;    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0px;
+}
+
+.nav-bar img {
+    width: 150px;
+    padding-right: 50px;
+}
+
+.nav-bar li {
+    list-style-type: none;
+}
+
+#logo {
+    width: 80%;
+}
+
+/* .nav-bar li a {
+    font-size: 40px;
+    text-decoration: none;
+    color: aliceblue;    
+}
+
+.nav-bar li a:visited {
+    color: aliceblue;
+}
+
+.nav-bar li a:hover {
+    text-shadow: 0px 5px 3px rgb(113, 146, 218);
+}
+.nav-bar li a p {
+    font-size: 60px; 
+    margin: 0px 25px; 
+} */
+
+.blog {
+    margin: 20px auto;
+    padding: 15px 20px 30px 20px;
+    border-radius: 25px;
+    max-width: 77%;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;    
+}
+
+.card {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(48, 90, 179);
+    border-radius: 25px;
+    width: 200px;
+    height: 200px;
+}
+
+.card a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.719);
+    padding: 10px;
+}
+
+.card a:visited {
+    color: rgba(0, 0, 0, 0.719);
+}
+
+.card img {
+    display: block;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+.post {
+    padding: 0px 20px;
+    text-align: justify;
+}
+
+.post h1 {
+    text-align: center;
+    font-family: 'Bubblegum Sans', cursive; 
+    font-size: 50px;
+}
+
+.post h2 {
+    padding-top: 30px
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gallery img {
+    width: 200px;
+}
+
+footer {
+    background-color: rgb(39, 11, 105);
+}
+
+footer ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+footer li {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    list-style-type: none;
+    color: aliceblue;
+    padding: 0px 10px;
+}
+
+footer li a {
+    text-decoration: none;
+    color: aliceblue;  
+    padding: 10px;  
+}
+
+footer li a:visited {
+    color: aliceblue;
+}

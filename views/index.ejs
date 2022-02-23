@@ -1,0 +1,35 @@
+<%- include('partials/header') %>
+
+<div class="blog">
+    
+    <h1> Un poco sobre animales </h1>
+    
+
+    <div class="card-container">
+        <% 
+        function image(post) {
+            let file = matter.read(dirname + '/blog_post/' + post);        
+            return file.data.image;
+        }
+        function title(post) {
+            let file = matter.read(dirname + '/blog_post/' + post);        
+            return file.data.title;
+        }
+        
+        for (post of posts) { 
+            var URL = "/blog/" + post.slice(0, -3); 
+            var imagen = image(post);
+            var titulo = title(post);         
+        %>
+        
+            <div class="card">
+                <img src="<%= imagen %>" alt="" style="width: 100px;">
+                <a href="<%= URL %>"><%= titulo %></a> 
+            </div>
+            
+        <% } %>   
+    </div>
+ 
+</div>
+
+<%- include('partials/footer') %>
